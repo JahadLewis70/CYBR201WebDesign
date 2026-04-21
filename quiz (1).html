@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="html-css.html">HTML & CSS</a> |
+    <a href="javascript.html">JavaScript</a> |
+    <a href="accessibility.html">Accessibility</a> |
+    <a href="security.html">Security</a> |
+    <a href="quiz.html">Quiz</a>
+  </nav>
+
+  <h1>Quick Quiz</h1>
+
+  <p>What does HTML stand for?</p>
+
+  <button onclick="checkAnswer('a')">HyperText Markup Language</button>
+  <button onclick="checkAnswer('b')">High Tech Machine Learning</button>
+
+  <p id="result"></p>
+
+  <script>
+    function checkAnswer(answer) {
+      if (answer === 'a') {
+        document.getElementById("result").innerHTML = "Correct!";
+      } else {
+        document.getElementById("result").innerHTML = "Wrong answer!";
+      }
+    }
+  </script>
+
+</body>
+</html>
